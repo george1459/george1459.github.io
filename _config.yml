@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "Shicheng Liu Homepage"
 title_separator          : "-"
-name                     : &name "Shicheng Liu"
+name                     : &name "Shicheng (George) Liu"
 description              : &description "4-th year CS/Math double major undergrad @ UChicago"
 url                      : https://george1459.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -82,11 +82,11 @@ analytics:
 author:
   name             : "Shicheng Liu"
   avatar           : "profile.png"
-  bio              : "4-th year CS & Math double major with minor in Physics undergrad @ UChicago, broadly interested in SE/PL & Systems"
-  location         : "Chicago"
+  bio              : "4-th year CS & Math double major with minor in Physics undergrad @ UChicago, broadly interested in SE/PL & Systems. shicheng2000 [at] uchicago [dot] edu"
+  location         : "Chicago, IL"
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=9F39MewAAAAJ&hl=en"
+  googlescholar    : "citations?user=9F39MewAAAAJ&hl=en"
   email            : "shicheng2000@uchicago.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -94,12 +94,12 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : "https://www.facebook.com/shicheng.liu.716/"
+  facebook         : "shicheng.liu.716"
   foursquare       :
   github           : "george1459"
   google_plus      :
   keybase          :
-  instagram        : "https://www.instagram.com/shicheng_george/"
+  instagram        : "shicheng_george"
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
