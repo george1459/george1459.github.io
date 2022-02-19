@@ -82,11 +82,11 @@ analytics:
 author:
   name             : "Shicheng Liu"
   avatar           : "profile.png"
-  bio              : "4-th year CS & Math double major with minor in Physics undergrad @ UChicago, broadly interested in SE/PL & Systems. shicheng2000 [at] uchicago [dot] edu"
+  bio              : "4-th year CS & Math double major with minor in Physics undergrad @ UChicago, broadly interested in SE/PL & Systems. Email me: shicheng2000 [at] uchicago [dot] edu"
   location         : "Chicago, IL"
   employer         :
   pubmed           : 
-  googlescholar    : "citations?user=9F39MewAAAAJ&hl=en"
+  googlescholar    : "https://scholar.google.com/citations?user=9F39MewAAAAJ&hl=en"
   email            : "shicheng2000@uchicago.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
