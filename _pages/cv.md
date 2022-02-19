@@ -7,7 +7,9 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+Take a look at my CV [here](http://george1459.github.io/files/Shicheng_Liu_CV_publish.pdf) while my site is still under construction!
+
+<!-- {% include base_path %}
 
 Education
 ======
@@ -56,4 +58,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
