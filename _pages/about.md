@@ -16,7 +16,7 @@ I am currently a final-year undergrad at The University of Chicago double majori
 
 Education
 ======
-* B.S. with Honors in Computer Science \& B.S. with Honors in Mathematics, The University of Chicago, 2022 <br />
+* B.S. *with Honors* in Computer Science & in Mathematics, The University of Chicago, 2022 <br />
   *Minor in Physics* <br />
   *Quarter-long exchange (Autumn 2021) at the California Institute of Technology*
 
@@ -24,15 +24,15 @@ Education
 
 Publications
 ======
-* [Automated Testing of Software that Uses Machine Learning APIs]({https://people.cs.uchicago.edu/~cwan/paper/ml_api_test.pdf}) \hfill  ICSE 22 <br />
+* [Automated Testing of Software that Uses Machine Learning APIs]({https://people.cs.uchicago.edu/~cwan/paper/ml_api_test.pdf}) <br />
   Chengcheng Wan, **Shicheng Liu**, Sophie Xie, Yifan Liu, Henry Hoffmann, Michael Maire, Shan Lu <br />
   44th International Conference on Software Engineering, 2022 (ICSE 2022) <br />
-  *(Acceptance Rate: 26.2\%, 197 out of 751)*
+  *(Acceptance Rate: 26.2%, 197 out of 751)*
   
-* [Are Machine Learning Cloud APIs Used Correctly?](http://people.cs.uchicago.edu/~cwan/paper/ml_api.pdf) \hfill ICSE 2021 <br />
+* [Are Machine Learning Cloud APIs Used Correctly?](http://people.cs.uchicago.edu/~cwan/paper/ml_api.pdf) <br />
   Chengcheng Wan, **Shicheng Liu**, Henry Hoffmann, Michael Maire, Shan Lu <br />
   43rd International Conference on Software Engineering, 2021 (ICSE 2021) <br />
-  *(Acceptance Rate: 22.4\%, 138 out of 615)*
+  *(Acceptance Rate: 22.4%, 138 out of 615)*
 
 To be updated Soon
 ======
