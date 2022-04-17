@@ -24,11 +24,11 @@ Education
 
 Publications
 ======
-* [Automated Testing of Software that Uses Machine Learning APIs](https://people.cs.uchicago.edu/~cwan/paper/ml_api_test.pdf) <br />
+* [Automated Testing of Software that Uses Machine Learning APIs](http://george1459.github.io/files/ICSE-22-testing.pdf) <br />
   Chengcheng Wan, **Shicheng Liu**, Sophie Xie, Yifan Liu, Henry Hoffmann, Michael Maire, Shan Lu <br />
   44th International Conference on Software Engineering, 2022 (ICSE 2022) <br />
   
-* [Are Machine Learning Cloud APIs Used Correctly?](http://people.cs.uchicago.edu/~cwan/paper/ml_api.pdf) <br />
+* [Are Machine Learning Cloud APIs Used Correctly?](http://george1459.github.io/files/ICSE-22-testing.pdf/ICSE-21-empirical-study.pdf) <br />
   Chengcheng Wan, **Shicheng Liu**, Henry Hoffmann, Michael Maire, Shan Lu <br />
   43rd International Conference on Software Engineering, 2021 (ICSE 2021) <br />
 
