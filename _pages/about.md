@@ -28,7 +28,7 @@ Publications
   Chengcheng Wan, **Shicheng Liu**, Sophie Xie, Yifan Liu, Henry Hoffmann, Michael Maire, Shan Lu <br />
   44th International Conference on Software Engineering, 2022 (ICSE 2022) <br />
   
-* [Are Machine Learning Cloud APIs Used Correctly?](http://george1459.github.io/files/ICSE-22-testing.pdf/ICSE-21-empirical-study.pdf) <br />
+* [Are Machine Learning Cloud APIs Used Correctly?](http://george1459.github.io/files/ICSE-21-empirical-study.pdf) <br />
   Chengcheng Wan, **Shicheng Liu**, Henry Hoffmann, Michael Maire, Shan Lu <br />
   43rd International Conference on Software Engineering, 2021 (ICSE 2021) <br />
 
