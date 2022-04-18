@@ -16,12 +16,13 @@ I am currently a final-year undergrad at The University of Chicago double majori
 
 Education
 ======
-* **B.S. with Honors in Computer Science & in Mathematics** <br />
-Minor in Physics, The University of Chicago, 2022 
+* **B.S. (w. Honors) in Computer Science & in Mathematics**, Minor in Physics <br />
+The University of Chicago, 2022 
    - *Quarter-long exchange (Autumn 2021), California Institute of Technology*
    - Honors thesis (tentative title, available soon): "Characterizing, Detecting, and Exposing Mis-uses of Machine Learning cloud APIs in Open-source Software" <br />
 
-* **Ph.D in Computer Science**, Stanford University, 2022 - 202(?)
+* **Ph.D in Computer Science** <br />
+Stanford University, 2022 - 202(?)
 
 Publications
 ======
