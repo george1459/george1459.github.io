@@ -8,9 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-Hi there! I am Shicheng (George) Liu. I will be joining Stanford CS Ph.D. program in 2022, initially advised by [Prof. Monica S. Lam](https://suif.stanford.edu/~lam/).
+Hi there! I am Shicheng (George) Liu, a first-year CS Ph.D. at Stanford. I am currently advised by [Prof. Monica S. Lam](https://suif.stanford.edu/~lam/), working on the [Genie](https://genie.stanford.edu/) virtual assistant.
 
-I am currently a final-year undergrad at The University of Chicago double majoring in Computer Science and Mathematics with a minor in Physics. I am broadly interested in Programming Languages, Software Engineering, and Systems. While at UChicago, I worked with [Prof. Shan Lu](http://people.cs.uchicago.edu/~shanlu/) (whose help and guidance I cannot thank enough) and [Chengcheng Wan](https://people.cs.uchicago.edu/~cwan/) on a series of Machine Learning (ML) cloud API studies. We conducted the first empirical study on understanding how such ML cloud APIs are used by developers and proposed the first systematic testing framework for such APIs.
+I am broadly interested in Programming Languages, Software Engineering, and Systems.
+
+Previously, I was an undergrad at The University of Chicago double majoring in Computer Science and Mathematics with a minor in Physics. While at UChicago, I worked with [Prof. Shan Lu](http://people.cs.uchicago.edu/~shanlu/) on a series of Machine Learning (ML) cloud API studies. We conducted the first empirical study on understanding how such ML cloud APIs are used by developers and proposed the first systematic testing framework for such APIs.
 
 <!-- Take a look at my CV [here](http://george1459.github.io/files/Shicheng_Liu_CV_publish.pdf) while my site is still under construction! -->
 
@@ -19,7 +21,7 @@ Education
 * **B.S. (w. Honors) in Computer Science & in Mathematics**, Minor in Physics <br />
 The University of Chicago, 2022 
    - *Quarter-long exchange (Autumn 2021), California Institute of Technology*
-   - Honors thesis (tentative title, available soon): "Characterizing, Detecting, and Exposing Mis-uses of Machine Learning cloud APIs in Open-source Software" <br />
+   - Honors thesis: [Characterizing, Detecting, and Exposing Mis-uses of Machine Learning cloud APIs in Open-source Software](http://george1459.github.io/files/Shicheng_Liu_Honors_CS_Bachelor_Thesis.pdf) <br />
 
 * **Ph.D in Computer Science** <br />
 Stanford University, 2022 - 202(?)
