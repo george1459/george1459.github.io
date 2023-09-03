@@ -8,13 +8,12 @@ redirect_from:
   - /about.html
 ---
 
-Hi there! I am Shicheng (George) Liu, a first-year CS Ph.D. at Stanford. I am currently advised by [Prof. Monica S. Lam](https://suif.stanford.edu/~lam/), working on the [Genie](https://genie.stanford.edu/) virtual assistant.
+Hi there! I am Shicheng (George) Liu, a first-year CS Ph.D. at Stanford. I am currently advised by [Prof. Monica S. Lam](https://suif.stanford.edu/~lam/), working on conversational agents with large language models (LLMs).
 
 I am broadly interested in Programming Languages, Software Engineering, and Systems.
 
 Previously, I was an undergrad at The University of Chicago double majoring in Computer Science and Mathematics with a minor in Physics. While at UChicago, I worked with [Prof. Shan Lu](http://people.cs.uchicago.edu/~shanlu/) on a series of Machine Learning (ML) cloud API studies. We conducted the first empirical study on understanding how such ML cloud APIs are used by developers and proposed the first systematic testing framework for such APIs.
 
-<!-- Take a look at my CV [here](http://george1459.github.io/files/Shicheng_Liu_CV_publish.pdf) while my site is still under construction! -->
 
 Education
 ======
