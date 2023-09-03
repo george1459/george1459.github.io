@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Shicheng Liu Homepage"
 title_separator          : "-"
 name                     : &name "Shicheng (George) Liu"
-description              : &description "4-th year CS/Math double major undergrad @ UChicago"
+description              : &description "2-nd year PhD student @ Stanford CS"
 url                      : https://george1459.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "george1459.github.io"
@@ -82,24 +82,24 @@ analytics:
 author:
   name             : "Shicheng Liu"
   avatar           : "profile.png"
-  bio              : "4-th year CS & Math double major with minor in Physics undergrad @ UChicago, broadly interested in SE/PL & Systems. Email me: shicheng2000 [at] uchicago [dot] edu"
-  location         : "Chicago, IL"
+  bio              : "4-th year CS & Math double major with minor in Physics undergrad @ UChicago, broadly interested in SE/PL & Systems. Email me: shicheng [at] cs [dot] stanford [dot] edu"
+  location         : "Stanford, CA"
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=9F39MewAAAAJ&hl=en"
-  email            : "shicheng2000@uchicago.edu"
+  googlescholar    : "https://scholar.google.com/citations?user=Qu38o2EAAAAJ&hl=en"
+  email            : "shicheng@cs.stanford.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : "shicheng.liu.716"
+  facebook         :
   foursquare       :
   github           : "george1459"
   google_plus      :
   keybase          :
-  instagram        : "shicheng_george"
+  instagram        : 
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
