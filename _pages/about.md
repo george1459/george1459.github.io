@@ -27,6 +27,11 @@ Stanford University, 2022 - 202(?)
 
 Publications
 ======
+* LLMs with Knowledge Graph
+  - Fine-tuned LLMs Know More, Hallucinate Less with Few-Shot Sequence-to-Sequence Semantic Parsing over Wikidata <br />
+  Silei Xu<sup>*</sup>, **Shicheng Liu<sup>*</sup>**, Theo Culhane, Elizaveta Pertseva, Meng-Hsi Wu, Sina Semnani, Monica Lam <br />
+  The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP 2023) <br />
+
 * Machine Learning Cloud APIs
   - [Automated Testing of Software that Uses Machine Learning APIs](http://george1459.github.io/files/ICSE-22-testing.pdf) <br />
   Chengcheng Wan, **Shicheng Liu**, Sophie Xie, Yifan Liu, Henry Hoffmann, Michael Maire, Shan Lu <br />
