@@ -28,7 +28,7 @@ Stanford University, 2022 - 202(?)
 Publications
 ======
 * LLMs with Knowledge Graph
-  - Fine-tuned LLMs Know More, Hallucinate Less with Few-Shot Sequence-to-Sequence Semantic Parsing over Wikidata <br />
+  - [Fine-tuned LLMs Know More, Hallucinate Less with Few-Shot Sequence-to-Sequence Semantic Parsing over Wikidata](https://nlp.stanford.edu/pubs/xu2023wikidata.pdf) <br />
   Silei Xu<sup>*</sup>, **Shicheng Liu<sup>*</sup>**, Theo Culhane, Elizaveta Pertseva, Meng-Hsi Wu, Sina Semnani, Monica Lam <br />
   The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP 2023) <br />
 
