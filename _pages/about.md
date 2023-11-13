@@ -8,9 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-Hi there! I am Shicheng (George) Liu, a first-year CS Ph.D. at Stanford. I am currently advised by [Prof. Monica S. Lam](https://suif.stanford.edu/~lam/), working on conversational agents with large language models (LLMs).
+Hi there! I am Shicheng (George) Liu, second-year CS Ph.D. at Stanford. I am currently advised by [Prof. Monica S. Lam](https://suif.stanford.edu/~lam/), working on conversational agents with large language models (LLMs).
 
-I am broadly interested in Programming Languages, Software Engineering, and Systems.
+I am broadly interested in Natural Language Processing, Programming Languages, Software Engineering, and Systems.
 
 Previously, I was an undergrad at The University of Chicago double majoring in Computer Science and Mathematics with a minor in Physics. While at UChicago, I worked with [Prof. Shan Lu](http://people.cs.uchicago.edu/~shanlu/) on a series of Machine Learning (ML) cloud API studies. We conducted the first empirical study on understanding how such ML cloud APIs are used by developers and proposed the first systematic testing framework for such APIs.
 
@@ -29,6 +29,7 @@ Publications
 ======
 * LLMs with Knowledge Graph
   - [Fine-tuned LLMs Know More, Hallucinate Less with Few-Shot Sequence-to-Sequence Semantic Parsing over Wikidata](https://nlp.stanford.edu/pubs/xu2023wikidata.pdf) <br />
+  [[6-min presentation]](https://drive.google.com/file/d/1QwobWmW9sGAvqi4aWwh5ht3DdDcOLu8Q/view?usp=sharing) <br />
   Silei Xu<sup>*</sup>, **Shicheng Liu<sup>*</sup>**, Theo Culhane, Elizaveta Pertseva, Meng-Hsi Wu, Sina Semnani, Monica Lam <br />
   The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP 2023) <br />
 
