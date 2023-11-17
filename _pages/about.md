@@ -27,9 +27,14 @@ Stanford University, 2022 - 202(?)
 
 Publications
 ======
+* LLMs with Structured and Unstructured Data
+  - [SUQL: Conversational Search over Structured and Unstructured Data with Large Language Models](https://arxiv.org/abs/2311.09818) <br />
+  **Shicheng Liu**, Jialiang Xu, Wesley Tjangnaka, Sina J. Semnani, Chen Jie Yu, Gui Dávid, Monica S. Lam <br />
+  arxiv preprint <br />
+
 * LLMs with Knowledge Graph
   - [Fine-tuned LLMs Know More, Hallucinate Less with Few-Shot Sequence-to-Sequence Semantic Parsing over Wikidata](https://nlp.stanford.edu/pubs/xu2023wikidata.pdf) <br />
-  [[6-min presentation]](https://drive.google.com/file/d/1QwobWmW9sGAvqi4aWwh5ht3DdDcOLu8Q/view?usp=sharing) <br />
+  [(6-min video presentation)](https://drive.google.com/file/d/1QwobWmW9sGAvqi4aWwh5ht3DdDcOLu8Q/view?usp=sharing) <br />
   Silei Xu<sup>*</sup>, **Shicheng Liu<sup>*</sup>**, Theo Culhane, Elizaveta Pertseva, Meng-Hsi Wu, Sina Semnani, Monica Lam <br />
   The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP 2023) <br />
 
@@ -42,5 +47,5 @@ Publications
   Chengcheng Wan, **Shicheng Liu**, Henry Hoffmann, Michael Maire, Shan Lu <br />
   43rd International Conference on Software Engineering, 2021 (ICSE 2021) <br />
 
-For details, see my: [CV](http://george1459.github.io/files/Shicheng_Liu_CV_publish.pdf)
+<!-- For details, see my: [CV](http://george1459.github.io/files/Shicheng_Liu_CV_publish.pdf) -->
 ======
