@@ -28,7 +28,7 @@ Selected Publications
 ======
 * LLMs with Structured and Unstructured Data
   - [SUQL: Conversational Search over Structured and Unstructured Data with Large Language Models](https://arxiv.org/abs/2311.09818) <br />
-  **Shicheng Liu**, Jialiang Xu, Wesley Tjangnaka, Sina J. Semnani, Chen Jie Yu, Gui Dávid, Monica S. Lam <br />
+  **Shicheng Liu**, Jialiang Xu, Wesley Tjangnaka, Sina J. Semnani, Chen Jie Yu, Monica S. Lam <br />
   Findings of the North American Chapter of Association for Computational Linguistics (NAACL 2024) <br />
 
 * LLMs with Knowledge Graph
