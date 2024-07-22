@@ -15,7 +15,7 @@ Previously, I was an undergrad at The University of Chicago double majoring in C
 Education
 ======
 * **Ph.D in Computer Science** <br />
-Stanford University, 2022 - 202(?)
+Stanford University, 2022 - 202?
 
 * **B.S. (w. Honors) in Computer Science & in Mathematics**, Minor in Physics <br />
 The University of Chicago, 2022 
