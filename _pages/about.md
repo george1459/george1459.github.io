@@ -23,12 +23,13 @@ Selected Recent Publications
 ======
 * LLMs with Structured and Unstructured data
   - [SUQL: Conversational Search over Structured and Unstructured Data with Large Language Models](https://arxiv.org/abs/2311.09818) <br />
+  [(10-min video presentation)](https://drive.google.com/file/d/1apBm1kzgMmijSFqgCBuwpjw23h7VdmQA/view?usp=sharing) <br />
   **Shicheng Liu**, Jialiang Xu, Wesley Tjangnaka, Sina J. Semnani, Chen Jie Yu, Monica S. Lam <br />
   Findings of the North American Chapter of Association for Computational Linguistics (NAACL 2024) <br />
 
 * LLMs with Knowledge Graph
   - [SPINACH: SPARQL-Based Information Navigation for Challenging Real-World Questions](https://arxiv.org/abs/2407.11417) <br />
-  [(10-min video presentation)](https://drive.google.com/file/d/1cAirGdcAuRSng4G9r-b_72-07yZG44_P/view?usp=drive_link)
+  [(10-min video presentation)](https://drive.google.com/file/d/1cAirGdcAuRSng4G9r-b_72-07yZG44_P/view?usp=drive_link) <br />
   **Shicheng Liu**<sup>*</sup>, Sina J. Semnani<sup>*</sup>, Harold Triedman, Jialiang Xu, Isaac Dan Zhao, Monica S. Lam <br />
   arxiv preprint <br />
 
