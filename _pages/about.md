@@ -8,11 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi there! I am Shicheng (George) Liu, second-year CS Ph.D. at Stanford. I am currently advised by [Prof. Monica S. Lam](https://suif.stanford.edu/~lam/) at [Stanford Open Virtual Assistant Lab (OVAL)](https://oval.cs.stanford.edu/). My recent research focuses on effectively retrieving knowledge from different modalities, including structured and hybrid (structured and unstructured) data sources with an emphasis on using programming languages.
-
-Previously, I was an undergrad at The University of Chicago double majoring in Computer Science and Mathematics with a minor in Physics. While at UChicago, I worked with [Prof. Shan Lu](http://people.cs.uchicago.edu/~shanlu/) on understanding how Machine Learning (ML) cloud APIs are used in the wild and proposed the first systematic testing framework for ML cloud APIs.
-
-[View my CV here](https://george1459.github.io/cv/)
+Hi there! I am Shicheng (George) Liu, third-year CS Ph.D. at Stanford. I am currently advised by [Prof. Monica S. Lam](https://suif.stanford.edu/~lam/) at [Stanford Open Virtual Assistant Lab (OVAL)](https://oval.cs.stanford.edu/). I focus on real-life, practical NLP problems, often drawing perspectives from computer systems and programming languages. My recent research focuses on knowledge agents with LLMs, aiming to enable domain-independent approaches that effectively retrieve and navigate different sources of knowledge, including structured, unstructured, and hybrid (combination of structured and unstructured data) sources.
 
 Education
 ======
