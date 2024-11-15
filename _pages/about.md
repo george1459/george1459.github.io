@@ -12,15 +12,16 @@ Hi there! I am Shicheng (George) Liu, second-year CS Ph.D. at Stanford. I am cur
 
 Previously, I was an undergrad at The University of Chicago double majoring in Computer Science and Mathematics with a minor in Physics. While at UChicago, I worked with [Prof. Shan Lu](http://people.cs.uchicago.edu/~shanlu/) on understanding how Machine Learning (ML) cloud APIs are used in the wild and proposed the first systematic testing framework for ML cloud APIs.
 
+[View my CV here](https://george1459.github.io/cv/)
+
 Education
 ======
 * **Ph.D in Computer Science** <br />
-Stanford University, 2022 - 202?
+Stanford University, 2022 - 2027 (Expected)
 
 * **B.S. (w. Honors) in Computer Science & in Mathematics**, Minor in Physics <br />
 The University of Chicago, 2022 
    - *Quarter-long exchange (Autumn 2021), California Institute of Technology*
-   - Honors thesis: [Characterizing, Detecting, and Exposing Mis-uses of Machine Learning cloud APIs in Open-source Software](http://george1459.github.io/files/Shicheng_Liu_Honors_CS_Bachelor_Thesis.pdf) <br />
 
 Selected Recent Publications
 ======
@@ -31,6 +32,7 @@ Selected Recent Publications
 
 * LLMs with Knowledge Graph
   - [SPINACH: SPARQL-Based Information Navigation for Challenging Real-World Questions](https://arxiv.org/abs/2407.11417) <br />
+  [(10-min video presentation)](https://drive.google.com/file/d/1cAirGdcAuRSng4G9r-b_72-07yZG44_P/view?usp=drive_link)
   **Shicheng Liu**<sup>*</sup>, Sina J. Semnani<sup>*</sup>, Harold Triedman, Jialiang Xu, Isaac Dan Zhao, Monica S. Lam <br />
   arxiv preprint <br />
 
@@ -38,6 +40,11 @@ Selected Recent Publications
   [(6-min video presentation)](https://drive.google.com/file/d/1QwobWmW9sGAvqi4aWwh5ht3DdDcOLu8Q/view?usp=sharing) <br />
   Silei Xu<sup>*</sup>, **Shicheng Liu<sup>*</sup>**, Theo Culhane, Elizaveta Pertseva, Meng-Hsi Wu, Sina Semnani, Monica S. Lam <br />
   The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP 2023) <br />
+
+* Programmable Task and Knowledge Agents with LLMs
+  - [Coding Reliable LLM-based Integrated Task and Knowledge Agents with GenieWorksheets](https://arxiv.org/abs/2407.05674) <br />
+  Harshit Joshi, **Shicheng Liu**, James Chen, Robert Weigle, Monica S. Lam <br />
+  Pre-print, 2024/07, in submission
 
 <!-- * Machine Learning Cloud APIs
   - [Automated Testing of Software that Uses Machine Learning APIs](http://george1459.github.io/files/ICSE-22-testing.pdf) <br />
