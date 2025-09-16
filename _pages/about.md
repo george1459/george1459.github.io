@@ -10,10 +10,12 @@ redirect_from:
 
 Hi there! I am Shicheng (George) Liu, third-year CS Ph.D. at Stanford. I am currently advised by [Prof. Monica S. Lam](https://suif.stanford.edu/~lam/) at [Stanford Open Virtual Assistant Lab (OVAL)](https://oval.cs.stanford.edu/). I focus on real-life, practical NLP problems, often drawing perspectives from computer systems and programming languages. My recent research focuses on knowledge agents with LLMs, aiming to enable domain-independent approaches that effectively retrieve and navigate different sources of knowledge, including structured, unstructured, and hybrid (combination of structured and unstructured data) sources.
 
+Over summer 2025, I am an AI research intern at Meta, learning from many wonderful mentors, including [Kai Sun](https://www.kaisun.org/), [Scott Yih](https://scottyih.org/), and [Luna Dong](https://lunadong.com/).
+
 Education
 ======
 * **Ph.D in Computer Science** <br />
-Stanford University, 2022 - 2027 (Expected)
+Stanford University, 2022 - 2026 (Expected)
 
 * **B.S. (w. Honors) in Computer Science & in Mathematics**, Minor in Physics <br />
 The University of Chicago, 2022 
@@ -41,15 +43,4 @@ Selected Recent Publications
 * Programmable Task and Knowledge Agents with LLMs
   - [Coding Reliable LLM-based Integrated Task and Knowledge Agents with GenieWorksheets](https://arxiv.org/abs/2407.05674) <br />
   Harshit Joshi, **Shicheng Liu**, James Chen, Robert Weigle, Monica S. Lam <br />
-  Pre-print, 2024/07, in submission
-
-<!-- * Machine Learning Cloud APIs
-  - [Automated Testing of Software that Uses Machine Learning APIs](http://george1459.github.io/files/ICSE-22-testing.pdf) <br />
-  Chengcheng Wan, **Shicheng Liu**, Sophie Xie, Yifan Liu, Henry Hoffmann, Michael Maire, Shan Lu <br />
-  44th International Conference on Software Engineering, 2022 (ICSE 2022) <br />
-
-  - [Are Machine Learning Cloud APIs Used Correctly?](http://george1459.github.io/files/ICSE-21-empirical-study.pdf) <br />
-  Chengcheng Wan, **Shicheng Liu**, Henry Hoffmann, Michael Maire, Shan Lu <br />
-  43rd International Conference on Software Engineering, 2021 (ICSE 2021) <br /> -->
-
-<!-- For details, see my: [CV](http://george1459.github.io/files/Shicheng_Liu_CV_publish.pdf) -->
+  Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025)
