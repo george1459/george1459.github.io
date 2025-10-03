@@ -40,7 +40,7 @@ Selected Recent Publications
 
   - [Fine-tuned LLMs Know More, Hallucinate Less with Few-Shot Sequence-to-Sequence Semantic Parsing over Wikidata](https://arxiv.org/abs/2305.14202) <br />
   [(6-min video presentation)](https://drive.google.com/file/d/1QwobWmW9sGAvqi4aWwh5ht3DdDcOLu8Q/view?usp=sharing) <br />
-  Silei Xu<sup>*</sup>, **Shicheng Liu<sup>*</sup>**, Theo Culhane, Elizaveta Pertseva, Meng-Hsi Wu, Sina Semnani, Monica S. Lam <br />
+  Silei Xu<sup>*</sup>, **Shicheng Liu**<sup>*</sup>, Theo Culhane, Elizaveta Pertseva, Meng-Hsi Wu, Sina Semnani, Monica S. Lam <br />
   *The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP 2023)* <br />
 
 * Programmable Task and Knowledge Agents with LLMs
