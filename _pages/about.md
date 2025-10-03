@@ -8,9 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-Hi there! I am Shicheng (George) Liu, third-year CS Ph.D. at Stanford. I am currently advised by [Prof. Monica S. Lam](https://suif.stanford.edu/~lam/) at [Stanford Open Virtual Assistant Lab (OVAL)](https://oval.cs.stanford.edu/). I focus on real-life, practical NLP problems, often drawing perspectives from computer systems and programming languages. My recent research focuses on knowledge agents with LLMs, aiming to enable domain-independent approaches that effectively retrieve and navigate different sources of knowledge, including structured, unstructured, and hybrid (combination of structured and unstructured data) sources.
+Hi there! I am Shicheng Liu, fourth-year CS Ph.D. at Stanford advised by [Prof. Monica S. Lam](https://suif.stanford.edu/~lam/) at [Stanford Open Virtual Assistant Lab (OVAL)](https://oval.cs.stanford.edu/) and [Stanford NLP Group](https://nlp.stanford.edu/). I focus on real-life, practical NLP problems, often drawing perspectives from computer systems and programming languages. My recent research focuses on knowledge agents with LLMs, aiming to enable domain-independent approaches that effectively retrieve and navigate different sources of knowledge, including structured, unstructured, and hybrid (combination of structured and unstructured data) sources.
 
-Over summer 2025, I am an AI research intern at Meta, learning from many wonderful mentors, including [Kai Sun](https://www.kaisun.org/), [Scott Yih](https://scottyih.org/), and [Luna Dong](https://lunadong.com/).
+During summer 2025, I was an AI research intern at Meta, where I learned from many wonderful mentors, including [Kai Sun](https://www.kaisun.org/), [Scott Yih](https://scottyih.org/), and [Luna Dong](https://lunadong.com/).
 
 Education
 ======
@@ -24,6 +24,9 @@ The University of Chicago, 2022
 Selected Recent Publications
 ======
 * LLMs with Structured and Unstructured data
+  - [SCRIBES: Web-Scale Script-Based Semi-Structured Data Extraction with Reinforcement Learning](https://arxiv.org/pdf/2510.01832) <br /> **Shicheng Liu**, Kai Sun, Lisheng Fu, Xilun Chen, Xinyuan Zhang, Zhaojiang Lin, Rulin Shao, Yue Liu, Anuj Kumar, Wen-tau Yih, Xin Luna Dong <br />
+  Pre-print, under review <br />
+
   - [SUQL: Conversational Search over Structured and Unstructured Data with Large Language Models](https://arxiv.org/abs/2311.09818) <br />
   [(10-min video presentation)](https://drive.google.com/file/d/1apBm1kzgMmijSFqgCBuwpjw23h7VdmQA/view?usp=sharing) <br />
   **Shicheng Liu**, Jialiang Xu, Wesley Tjangnaka, Sina J. Semnani, Chen Jie Yu, Monica S. Lam <br />

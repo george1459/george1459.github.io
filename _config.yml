@@ -9,8 +9,8 @@
 locale                   : "en-US"
 title                    : "Shicheng Liu Homepage"
 title_separator          : "-"
-name                     : &name "Shicheng (George) Liu"
-description              : &description "2-nd year PhD student @ Stanford CS"
+name                     : &name "Shicheng Liu"
+description              : &description "4-th year PhD student @ Stanford NLP"
 url                      : https://george1459.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "george1459.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Shicheng Liu"
   avatar           : "profile.JPG"
-  bio              : "3-rd year CS PhD at Stanford NLP group. Email me: shicheng [at] cs [dot] stanford [dot] edu"
+  bio              : "4th year CS PhD at Stanford NLP group. Email me: shicheng [at] cs [dot] stanford [dot] edu"
   location         : "Stanford, CA"
   employer         :
   pubmed           : 
