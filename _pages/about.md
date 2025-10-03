@@ -25,25 +25,25 @@ Selected Recent Publications
 ======
 * LLMs with Structured and Unstructured data
   - [SCRIBES: Web-Scale Script-Based Semi-Structured Data Extraction with Reinforcement Learning](https://arxiv.org/pdf/2510.01832) <br /> **Shicheng Liu**, Kai Sun, Lisheng Fu, Xilun Chen, Xinyuan Zhang, Zhaojiang Lin, Rulin Shao, Yue Liu, Anuj Kumar, Wen-tau Yih, Xin Luna Dong <br />
-  Pre-print, under review <br />
+  *Pre-print, under review* <br />
 
   - [SUQL: Conversational Search over Structured and Unstructured Data with Large Language Models](https://arxiv.org/abs/2311.09818) <br />
   [(10-min video presentation)](https://drive.google.com/file/d/1apBm1kzgMmijSFqgCBuwpjw23h7VdmQA/view?usp=sharing) <br />
   **Shicheng Liu**, Jialiang Xu, Wesley Tjangnaka, Sina J. Semnani, Chen Jie Yu, Monica S. Lam <br />
-  Findings of the North American Chapter of Association for Computational Linguistics (NAACL 2024) <br />
+  *Findings of the North American Chapter of Association for Computational Linguistics (NAACL 2024)* <br />
 
 * LLMs with Knowledge Graph
   - [SPINACH: SPARQL-Based Information Navigation for Challenging Real-World Questions](https://arxiv.org/abs/2407.11417) <br />
   [(10-min video presentation)](https://drive.google.com/file/d/1cAirGdcAuRSng4G9r-b_72-07yZG44_P/view?usp=drive_link) <br />
   **Shicheng Liu**<sup>*</sup>, Sina J. Semnani<sup>*</sup>, Harold Triedman, Jialiang Xu, Isaac Dan Zhao, Monica S. Lam <br />
-  Findings of the 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP 2024) <br />
+  *Findings of the 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP 2024)* <br />
 
   - [Fine-tuned LLMs Know More, Hallucinate Less with Few-Shot Sequence-to-Sequence Semantic Parsing over Wikidata](https://arxiv.org/abs/2305.14202) <br />
   [(6-min video presentation)](https://drive.google.com/file/d/1QwobWmW9sGAvqi4aWwh5ht3DdDcOLu8Q/view?usp=sharing) <br />
   Silei Xu<sup>*</sup>, **Shicheng Liu<sup>*</sup>**, Theo Culhane, Elizaveta Pertseva, Meng-Hsi Wu, Sina Semnani, Monica S. Lam <br />
-  The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP 2023) <br />
+  *The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP 2023)* <br />
 
 * Programmable Task and Knowledge Agents with LLMs
   - [Coding Reliable LLM-based Integrated Task and Knowledge Agents with GenieWorksheets](https://arxiv.org/abs/2407.05674) <br />
   Harshit Joshi, **Shicheng Liu**, James Chen, Robert Weigle, Monica S. Lam <br />
-  Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025)
+  *Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025)*
