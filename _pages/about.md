@@ -23,6 +23,7 @@ The University of Chicago, 2022
 
 Selected Recent Publications
 ======
+<sup>†</sup> *Denotes joint first authorship.*
 * LLMs with Structured and Unstructured data
   - [SCRIBES: Web-Scale Script-Based Semi-Structured Data Extraction with Reinforcement Learning](https://arxiv.org/pdf/2510.01832) <br /> **Shicheng Liu**, Kai Sun, Lisheng Fu, Xilun Chen, Xinyuan Zhang, Zhaojiang Lin, Rulin Shao, Yue Liu, Anuj Kumar, Wen-tau Yih, Xin Luna Dong <br />
   *Pre-print, under review* <br />
