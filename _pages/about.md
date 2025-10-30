@@ -10,7 +10,7 @@ redirect_from:
 
 Hi there! I am Shicheng Liu, fourth-year CS Ph.D. at Stanford advised by [Prof. Monica S. Lam](https://suif.stanford.edu/~lam/) at [Stanford Open Virtual Assistant Lab (OVAL)](https://oval.cs.stanford.edu/) and [Stanford NLP Group](https://nlp.stanford.edu/). I focus on real-life, practical NLP problems, often drawing perspectives from computer systems and programming languages. My recent research focuses on knowledge agents with LLMs, aiming to enable domain-independent approaches that effectively retrieve and navigate different sources of knowledge, including structured, unstructured, and hybrid (combination of structured and unstructured data) sources.
 
-During summer 2025, I was an AI research intern at Meta, working with [Kai Sun](https://www.kaisun.org/), [Scott Yih](https://scottyih.org/), and [Luna Dong](https://lunadong.com/).
+During summer 2025, I was an AI research intern at Meta, working with [Kai Sun](https://www.kaisun.org/), [Scott Yih](https://scottyih.org/), and [Luna Dong](https://lunadong.com/) on RL for knowledge extraction.
 
 Education
 ======
