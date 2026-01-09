@@ -12,6 +12,8 @@ Hi there! I am Shicheng Liu, fourth-year CS Ph.D. at Stanford advised by [Prof. 
 
 During summer 2025, I was an AI research intern at Meta, working with [Kai Sun](https://www.kaisun.org/), [Scott Yih](https://scottyih.org/), and [Luna Dong](https://lunadong.com/) on RL for knowledge extraction.
 
+I am grateful to be supported by the [2025-2026 IBM PhD Fellowship Award](www.research.ibm.com/university/awards/fellowships).
+
 Education
 ======
 * **Ph.D in Computer Science** <br />
