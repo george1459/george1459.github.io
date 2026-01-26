@@ -28,7 +28,7 @@ Selected Recent Publications
 <sup>†</sup> *Denotes joint first authorship.*
 * LLMs with Structured and Unstructured data
   - [SCRIBES: Web-Scale Script-Based Semi-Structured Data Extraction with Reinforcement Learning](https://arxiv.org/pdf/2510.01832) <br /> **Shicheng Liu**, Kai Sun, Lisheng Fu, Xilun Chen, Xinyuan Zhang, Zhaojiang Lin, Rulin Shao, Yue Liu, Anuj Kumar, Wen-tau Yih, Xin Luna Dong <br />
-  *Pre-print, under review* <br />
+  *Accepted to The Fourteenth International Conference on Learning Representations (ICLR 2026)* <br />
 
   - [SUQL: Conversational Search over Structured and Unstructured Data with Large Language Models](https://arxiv.org/abs/2311.09818) <br />
   [(10-min video presentation)](https://drive.google.com/file/d/1apBm1kzgMmijSFqgCBuwpjw23h7VdmQA/view?usp=sharing) <br />
