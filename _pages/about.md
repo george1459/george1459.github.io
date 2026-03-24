@@ -8,9 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi there! I am Shicheng Liu, fourth-year CS Ph.D. at Stanford advised by [Prof. Monica S. Lam](https://suif.stanford.edu/~lam/) at [Stanford Open Virtual Assistant Lab (OVAL)](https://oval.cs.stanford.edu/) and [Stanford NLP Group](https://nlp.stanford.edu/). I focus on real-life, practical NLP problems, often drawing perspectives from computer systems and programming languages. My recent research focuses on knowledge agents with LLMs, aiming to enable domain-independent approaches that effectively retrieve and navigate different sources of knowledge, including structured, unstructured, and hybrid (combination of structured and unstructured data) sources.
-
-During summer 2025, I was an AI research intern at Meta, working with [Kai Sun](https://www.kaisun.org/), [Scott Yih](https://scottyih.org/), and [Luna Dong](https://lunadong.com/) on RL for knowledge extraction.
+Hi there! I am Shicheng Liu, fourth-year CS Ph.D. at Stanford advised by [Prof. Monica S. Lam](https://suif.stanford.edu/~lam/) at [Stanford Open Virtual Assistant Lab (OVAL)](https://oval.cs.stanford.edu/) and [Stanford NLP Group](https://nlp.stanford.edu/). My research focuses on knowledge agents with LLMs, aiming to enable domain-independent approaches for in-depth exploration and synthesis of information from diverse knowledge sources, including structured, unstructured, and hybrid sources. Some of my recent work includes reinforcement learning approaches (\href{https://arxiv.org/abs/2510.01832}{SCRIBES}, ICLR 2026; work done at Meta), agentic frameworks (\href{https://arxiv.org/abs/2407.11417}{SPINACH}, EMNLP 2024), and programming-language interfaces for LLMs (\href{https://arxiv.org/pdf/2311.09818.pdf}{SUQL}, NAACL 2024) to tackle this problem.
 
 I am grateful to be supported by the [2025-2026 IBM PhD Fellowship Award](https://www.research.ibm.com/university/awards/fellowships).
 
