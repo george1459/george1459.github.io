@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi there! I am Shicheng Liu, fourth-year CS Ph.D. at Stanford advised by [Prof. Monica S. Lam](https://suif.stanford.edu/~lam/) at [Stanford Open Virtual Assistant Lab (OVAL)](https://oval.cs.stanford.edu/) and [Stanford NLP Group](https://nlp.stanford.edu/). My research focuses on knowledge agents with LLMs, aiming to enable domain-independent approaches for in-depth exploration and synthesis of information from diverse knowledge sources, including structured, unstructured, and hybrid sources. Some of my recent work includes reinforcement learning approaches ([SCRIBES](https://arxiv.org/abs/2510.01832), ICLR 2026; work done at Meta), agentic frameworks ([SPINACH](https://arxiv.org/abs/2407.11417), EMNLP 2024), and programming-language interfaces for LLMs ([SUQL](https://arxiv.org/pdf/2311.09818.pdf), NAACL 2024) to tackle this problem.
+Hi there! I am Shicheng Liu, fourth-year CS Ph.D. at Stanford advised by [Prof. Monica S. Lam](https://suif.stanford.edu/~lam/) at [Stanford Open Virtual Assistant Lab (OVAL)](https://oval.cs.stanford.edu/) and [Stanford NLP Group](https://nlp.stanford.edu/). My research focuses on knowledge agents with LLMs, aiming to enable domain-independent approaches for in-depth exploration and synthesis of information from diverse knowledge sources, including structured, unstructured, and hybrid sources. Some of my recent work includes reinforcement learning approaches ([SCRIBES](https://arxiv.org/abs/2510.01832), ICLR 2026; work done at Meta), agentic frameworks ([DataSTORM](https://arxiv.org/abs/2604.06474), pre-print 2026; [SPINACH](https://arxiv.org/abs/2407.11417), EMNLP 2024), and programming-language interfaces for LLMs ([SUQL](https://arxiv.org/pdf/2311.09818.pdf), NAACL 2024) to tackle this problem.
 
 I am grateful to be supported by the [2025-2026 IBM PhD Fellowship Award](https://www.research.ibm.com/university/awards/fellowships).
 
@@ -24,8 +24,13 @@ The University of Chicago, 2022
 Selected Recent Publications
 ======
 <sup>†</sup> *Denotes joint first authorship.*
+* LLM-based Deep Research Systems for Databases
+
+  - [DataSTORM: Deep Research on Large-Scale Databases using Exploratory Data Analysis and Data Storytelling](https://arxiv.org/abs/2604.06474) <br /> **Shicheng Liu**, Yucheng Jiang, Sajid Farook, Camila Nicollier Sanchez, David Fernando Castro Pena, Monica S. Lam <br /> 
+  *Pre-print, under review*  <br />
+
 * LLMs with Structured and Unstructured data
-  - [SCRIBES: Web-Scale Script-Based Semi-Structured Data Extraction with Reinforcement Learning](https://arxiv.org/pdf/2510.01832) <br /> **Shicheng Liu**, Kai Sun, Lisheng Fu, Xilun Chen, Xinyuan Zhang, Zhaojiang Lin, Rulin Shao, Yue Liu, Anuj Kumar, Wen-tau Yih, Xin Luna Dong <br />
+  - [SCRIBES: Web-Scale Script-Based Semi-Structured Data Extraction with Reinforcement Learning](https://openreview.net/pdf?id=gQSnEIA3Z3) <br /> **Shicheng Liu**, Kai Sun, Lisheng Fu, Xilun Chen, Xinyuan Zhang, Zhaojiang Lin, Rulin Shao, Yue Liu, Anuj Kumar, Wen-tau Yih, Xin Luna Dong <br />
   *Accepted to The Fourteenth International Conference on Learning Representations (ICLR 2026)* <br />
 
   - [SUQL: Conversational Search over Structured and Unstructured Data with Large Language Models](https://arxiv.org/abs/2311.09818) <br />
@@ -33,7 +38,7 @@ Selected Recent Publications
   **Shicheng Liu**, Jialiang Xu, Wesley Tjangnaka, Sina J. Semnani, Chen Jie Yu, Monica S. Lam <br />
   *Findings of the North American Chapter of Association for Computational Linguistics (NAACL 2024)* <br />
 
-* LLMs with Knowledge Graph
+* LLMs with Knowledge Bases
   - [SPINACH: SPARQL-Based Information Navigation for Challenging Real-World Questions](https://arxiv.org/abs/2407.11417) <br />
   [(10-min video presentation)](https://drive.google.com/file/d/1cAirGdcAuRSng4G9r-b_72-07yZG44_P/view?usp=drive_link) <br />
   **Shicheng Liu**<sup>†</sup>, Sina J. Semnani<sup>†</sup>, Harold Triedman, Jialiang Xu, Isaac Dan Zhao, Monica S. Lam <br />
