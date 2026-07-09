@@ -450,8 +450,14 @@ h2 {
   text-transform: uppercase;
   color: var(--accent);
 }
-.powder:hover .tip,
-.powder:focus .tip {
+@media (hover: hover) {
+  .powder:hover .tip,
+  .powder:focus .tip {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.powder.show .tip {
   opacity: 1;
   transform: translateY(0);
 }
@@ -709,6 +715,18 @@ footer {
   });
   systemDark.addEventListener('change', render);
   render();
+})();
+
+// On touch devices, the powder-day card shows on tap and dismisses itself.
+(function () {
+  var p = document.querySelector('.powder');
+  if (!p || !window.matchMedia('(hover: none)').matches) return;
+  var timer;
+  p.addEventListener('click', function () {
+    p.classList.add('show');
+    clearTimeout(timer);
+    timer = setTimeout(function () { p.classList.remove('show'); }, 4500);
+  });
 })();
 
 // Occasionally a rider carves down the front slope, on the runs served by the lift.
