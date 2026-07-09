@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shicheng Liu</title>
+<meta name="description" content="Shicheng Liu — CS Ph.D. candidate at Stanford working on knowledge agents with LLMs.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg stroke='%233A7CA5' stroke-width='1.6' stroke-linecap='round'%3E%3Cpath d='M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9L4.9 19.1'/%3E%3C/g%3E%3C/svg%3E">
+<style>
+:root {
+  --ground: #f7fafb;
+  --masthead-a: #e6eff5;
+  --masthead-b: #f7fafb;
+  --ink: #22323d;
+  --muted: #5b7180;
+  --accent: #2f6f97;
+  --accent-strong: #1f4e66;
+  --ice: #d8e5ec;
+  --ridge-far: #dde9ef;
+  --ridge-near: #cfe0e9;
+  --flake: #a8c8da;
+  --tag-bg: #e3edf3;
+  --tag-ink: #35617d;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ground: #101b23;
+    --masthead-a: #0c161e;
+    --masthead-b: #101b23;
+    --ink: #d8e4ec;
+    --muted: #8da4b3;
+    --accent: #7cb8da;
+    --accent-strong: #a3cde6;
+    --ice: #22384a;
+    --ridge-far: #17262f;
+    --ridge-near: #1c2f3b;
+    --flake: #d8e4ec;
+    --tag-bg: #1a2d3a;
+    --tag-ink: #93bed7;
+  }
+}
+:root[data-theme="light"] {
+  --ground: #f7fafb;
+  --masthead-a: #e6eff5;
+  --masthead-b: #f7fafb;
+  --ink: #22323d;
+  --muted: #5b7180;
+  --accent: #2f6f97;
+  --accent-strong: #1f4e66;
+  --ice: #d8e5ec;
+  --ridge-far: #dde9ef;
+  --ridge-near: #cfe0e9;
+  --flake: #a8c8da;
+  --tag-bg: #e3edf3;
+  --tag-ink: #35617d;
+}
+:root[data-theme="dark"] {
+  --ground: #101b23;
+  --masthead-a: #0c161e;
+  --masthead-b: #101b23;
+  --ink: #d8e4ec;
+  --muted: #8da4b3;
+  --accent: #7cb8da;
+  --accent-strong: #a3cde6;
+  --ice: #22384a;
+  --ridge-far: #17262f;
+  --ridge-near: #1c2f3b;
+  --flake: #d8e4ec;
+  --tag-bg: #1a2d3a;
+  --tag-ink: #93bed7;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+/* ---------- masthead ---------- */
+.masthead {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(var(--masthead-a), var(--masthead-b));
+}
+.masthead-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 2.4rem 1.5rem 0.6rem;
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.masthead h1 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: clamp(1.8rem, 4.5vw, 2.2rem);
+  letter-spacing: 0.01em;
+  margin: 0 0 0.35rem;
+  text-wrap: balance;
+}
+.role {
+  margin: 0 0 0.7rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.role a { color: var(--muted); text-decoration: underline; text-decoration-color: var(--ice); text-underline-offset: 3px; }
+.role a:hover { color: var(--accent); }
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.1rem;
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.links a { color: var(--accent-strong); font-weight: 500; }
+.portrait {
+  flex: 0 0 auto;
+  width: 138px;
+  height: 138px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--ground);
+  box-shadow: 0 1px 12px rgba(31, 78, 102, 0.18);
+}
+
+/* snow: a few flakes drifting down, masthead only */
+.snow {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+.snow i {
+  position: absolute;
+  top: -28px;
+  font-style: normal;
+  color: var(--flake);
+  animation: fall linear infinite;
+  will-change: transform, opacity;
+}
+.snow i:nth-child(1) { left: 8%;  font-size: 13px; animation-duration: 13s; animation-delay: 0s;   --o: 0.55; }
+.snow i:nth-child(2) { left: 23%; font-size: 9px;  animation-duration: 17s; animation-delay: -6s;  --o: 0.4; }
+.snow i:nth-child(3) { left: 38%; font-size: 11px; animation-duration: 15s; animation-delay: -11s; --o: 0.5; }
+.snow i:nth-child(4) { left: 55%; font-size: 8px;  animation-duration: 19s; animation-delay: -3s;  --o: 0.35; }
+.snow i:nth-child(5) { left: 70%; font-size: 12px; animation-duration: 14s; animation-delay: -9s;  --o: 0.5; }
+.snow i:nth-child(6) { left: 84%; font-size: 10px; animation-duration: 18s; animation-delay: -14s; --o: 0.45; }
+.snow i:nth-child(7) { left: 94%; font-size: 9px;  animation-duration: 16s; animation-delay: -5s;  --o: 0.4; }
+@keyframes fall {
+  0%   { transform: translate(0, 0) rotate(0deg); opacity: var(--o); }
+  50%  { transform: translate(14px, 130px) rotate(90deg); }
+  85%  { opacity: var(--o); }
+  100% { transform: translate(-6px, 270px) rotate(180deg); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .snow { display: none; }
+  .cab { animation: none; }
+  html { scroll-behavior: auto; }
+}
+
+/* mountain ridge divider with chairlift */
+.ridge { display: block; width: 100%; height: 90px; margin-top: 0.5rem; }
+.ridge .lift { opacity: 0.5; }
+.liftline {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 90px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+.cab {
+  position: absolute;
+  width: 9px;
+  height: 8px;
+  border-radius: 2.5px;
+  background: var(--flake);
+  opacity: 0.6;
+  animation: cab-run 75s linear infinite;
+}
+.cab::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -5px;
+  width: 1.5px;
+  height: 5px;
+  background: var(--flake);
+  transform: translateX(-50%);
+}
+.cab.chair {
+  background: transparent;
+  border-left: 2px solid var(--flake);
+  border-bottom: 2.5px solid var(--flake);
+  border-radius: 0 0 1px 2px;
+}
+.cab.chair::before { height: 11px; }
+.cab1 { left: 20%; top: 69.5px; }
+.cab2 { left: 34%; top: 61.1px; animation-delay: -18.75s; }
+.cab3 { left: 48%; top: 52.7px; animation-delay: -37.5s; }
+.cab4 { left: 62%; top: 44.3px; animation-delay: -56.25s; }
+@keyframes cab-run {
+  0%   { left: 7.5%;  top: 77px; opacity: 0; }
+  6%   { opacity: 0.6; }
+  94%  { opacity: 0.6; }
+  100% { left: 70.8%; top: 39px; opacity: 0; }
+}
+.skier {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  opacity: 0;
+  /* flipped to face left (downhill), slightly enlarged */
+  transform: scale(-1.2, 1.2);
+}
+.skier::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 0;
+  width: 1.6px;
+  height: 4.6px;
+  background: var(--flake);
+  border-radius: 1px;
+  transform: rotate(16deg);
+}
+.skier::after {
+  content: "";
+  position: absolute;
+  left: 0.5px;
+  bottom: 0;
+  width: 6.5px;
+  height: 1.6px;
+  background: var(--flake);
+  border-radius: 1px;
+  transform: rotate(9deg);
+}
+
+/* ---------- nav ---------- */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: color-mix(in srgb, var(--ground) 88%, transparent);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--ice);
+}
+nav ul {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0.65rem 1.5rem;
+  list-style: none;
+  display: flex;
+  gap: 1.4rem;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  overflow-x: auto;
+}
+nav a { color: var(--muted); font-weight: 500; white-space: nowrap; }
+nav a:hover { color: var(--accent); text-decoration: none; }
+nav ul { align-items: center; }
+.toggle-item { margin-left: auto; }
+.theme-toggle {
+  display: block;
+  width: 1.7rem;
+  height: 1.7rem;
+  padding: 0;
+  font-size: 0.9rem;
+  line-height: 1;
+  background: none;
+  border: 1px solid var(--ice);
+  border-radius: 99px;
+  color: var(--muted);
+  cursor: pointer;
+}
+.theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
+.theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* ---------- main ---------- */
+main {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0.4rem 1.5rem 2rem;
+}
+main p { margin: 0.65em 0; }
+section { padding-top: 1.7rem; }
+h2 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin: 0 0 0.35rem;
+}
+.rule {
+  width: 3.2rem;
+  height: 3px;
+  border: 0;
+  margin: 0 0 0.8rem;
+  background: var(--accent);
+  border-radius: 2px;
+}
+.note { color: var(--muted); font-size: 0.92rem; }
+
+/* about */
+.edu { list-style: none; padding: 0; margin: 0.4rem 0 0; }
+.edu li { padding: 0.4rem 0; border-top: 1px solid var(--ice); }
+.edu li:first-child { border-top: 0; }
+.edu .place { font-weight: 600; }
+.edu .detail { color: var(--muted); font-size: 0.9rem; }
+.edu-sub {
+  margin: 0.3rem 0 0;
+  padding-left: 1.1rem;
+  list-style: none;
+  color: var(--muted);
+  font-size: 0.92rem;
+  border-left: 2px solid var(--ice);
+}
+
+/* news */
+.news { list-style: none; padding: 0; margin: 0; }
+.news li {
+  display: grid;
+  grid-template-columns: 6.2rem 1fr;
+  gap: 1rem;
+  padding: 0.4rem 0;
+  border-top: 1px solid var(--ice);
+}
+.news li:first-child { border-top: 0; }
+.news a { font-weight: 650; }
+.news time {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding-top: 0.3rem;
+  font-variant-numeric: tabular-nums;
+}
+
+/* publications */
+.year {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 1.2rem 0 0.1rem;
+}
+.pub + .year {
+  border-top: 1px solid var(--ice);
+  padding-top: 1.1rem;
+}
+.pub { padding: 0.45rem 0; }
+.pub .title { font-weight: 600; font-size: 1rem; }
+.pub .title a { color: var(--ink); }
+.pub .title a:hover { color: var(--accent); }
+.pub .authors { margin: 0.15rem 0 0.25rem; font-size: 0.9rem; }
+.pub .authors strong { font-weight: 650; }
+.pub .venue-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.7rem;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+}
+.tag {
+  background: var(--tag-bg);
+  color: var(--tag-ink);
+  padding: 0.12rem 0.55rem;
+  border-radius: 99px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+.venue-line a { font-weight: 500; }
+.pill-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  border: 1px solid var(--ice);
+  border-radius: 99px;
+  padding: 0.1rem 0.55rem;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+}
+.pill-link:hover { color: var(--accent); border-color: var(--accent); text-decoration: none; }
+.pill-link svg { width: 12px; height: 12px; fill: currentColor; display: block; }
+
+/* awards */
+.awards { list-style: none; padding: 0; margin: 0; }
+.awards li { padding: 0.35rem 0; border-top: 1px solid var(--ice); }
+.awards li:first-child { border-top: 0; }
+.awards .yr { color: var(--muted); font-family: var(--sans); font-size: 0.85rem; }
+
+/* powder-day tooltip */
+.powder {
+  position: relative;
+  text-decoration: underline dotted;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 3px;
+  cursor: help;
+}
+.powder:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+.powder .tip {
+  position: absolute;
+  bottom: calc(100% + 9px);
+  left: 0;
+  width: min(310px, 78vw);
+  background: linear-gradient(var(--masthead-a), var(--ground));
+  border: 1px solid var(--ice);
+  border-radius: 9px;
+  padding: 0.55rem 0.75rem;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--ink);
+  box-shadow: 0 5px 16px rgba(31, 78, 102, 0.18);
+  opacity: 0;
+  transform: translateY(6px);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 3;
+}
+.powder .tip-label {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.powder:hover .tip,
+.powder:focus .tip {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .powder .tip { transition: none; }
+}
+
+/* footer */
+footer {
+  border-top: 1px solid var(--ice);
+  margin-top: 2rem;
+}
+.footer-inner {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 1.2rem 1.5rem 1.6rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.flake-mark { color: var(--accent); }
+
+@media (max-width: 560px) {
+  .masthead-inner { flex-direction: column-reverse; text-align: center; padding-top: 2.5rem; }
+  .links { justify-content: center; }
+  .portrait { width: 120px; height: 120px; }
+  .news li { grid-template-columns: 1fr; gap: 0.1rem; }
+  .news time { padding-top: 0; }
+}
+</style>
+<script>
+(function () {
+  var saved = localStorage.getItem('theme');
+  if (saved === 'dark' || saved === 'light') {
+    document.documentElement.setAttribute('data-theme', saved);
+  }
+})();
+</script>
+</head>
+<body>
+
+<svg style="display:none" aria-hidden="true">
+  <symbol id="icon-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></symbol>
+  <symbol id="icon-play" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></symbol>
+</svg>
+
+<header class="masthead">
+  <div class="snow" aria-hidden="true"><i>❄</i><i>❅</i><i>❄</i><i>❆</i><i>❄</i><i>❅</i><i>❄</i></div>
+  <div class="masthead-inner">
+    <div>
+      <h1>Shicheng Liu</h1>
+      <p class="role">Final-year Ph.D. Candidate, Stanford Computer Science<br>
+        <a href="https://nlp.stanford.edu/" target="_blank" rel="noopener">Stanford NLP Group</a> ·
+        <a href="https://oval.cs.stanford.edu/" target="_blank" rel="noopener">Stanford OVAL</a></p>
+      <div class="links">
+        <a href="mailto:shicheng@cs.stanford.edu">Email</a>
+        <a href="https://scholar.google.com/citations?user=Qu38o2EAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://github.com/george1459" target="_blank" rel="noopener">GitHub</a>
+        <a href="files/shicheng_cv.pdf" target="_blank" rel="noopener">CV</a>
+        <a href="https://x.com/ShichengGLiu" target="_blank" rel="noopener">X</a>
+      </div>
+    </div>
+    <img class="portrait" src="assets/profile.jpg" alt="Portrait of Shicheng Liu">
+  </div>
+  <svg class="ridge" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true">
+    <!-- far ridge: cirque-style headwall cresting on the right -->
+    <path fill="var(--ridge-far)" d="M0 90 L0 74 L120 62 L260 72 L400 52 L520 58 L640 34 L700 40 L760 30 L820 38 L880 30 L950 44 L1050 38 L1200 56 L1200 90 Z"/>
+    <path fill="var(--ridge-near)" d="M0 90 L0 84 L150 74 L300 82 L480 70 L660 80 L850 68 L1020 78 L1200 70 L1200 90 Z"/>
+    <g class="lift" stroke="var(--flake)" stroke-width="1.2" fill="none">
+      <line x1="330" y1="60" x2="330" y2="81"/>
+      <line x1="323" y1="61.5" x2="337" y2="61.5"/>
+      <line x1="600" y1="46.5" x2="600" y2="77"/>
+      <line x1="593" y1="48" x2="607" y2="48"/>
+      <line x1="90" y1="72" x2="850" y2="34"/>
+    </g>
+    <g class="lift" fill="var(--flake)" stroke="none">
+      <rect x="82" y="72" width="16" height="7" rx="1.5"/>
+      <rect x="842" y="28" width="16" height="7" rx="1.5"/>
+    </g>
+  </svg>
+  <div class="liftline" aria-hidden="true">
+    <span class="cab cab1"></span>
+    <span class="cab cab2 chair"></span>
+    <span class="cab cab3"></span>
+    <span class="cab cab4 chair"></span>
+  </div>
+</header>
+
+<nav aria-label="Sections">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#awards">Awards</a></li>
+    <li class="toggle-item"><button class="theme-toggle" type="button" aria-label="Switch to dark mode">☾</button></li>
+  </ul>
+</nav>
+
+<main>
+
+<section id="about">
+  <h2>About</h2>
+  <hr class="rule">
+  <p>Hi there! I am a final-year CS Ph.D. candidate at Stanford, advised by
+  <a href="https://suif.stanford.edu/~lam/" target="_blank" rel="noopener">Prof. Monica S. Lam</a> at the
+  <a href="https://nlp.stanford.edu/" target="_blank" rel="noopener">Stanford NLP Group</a>.
+  My research focuses on <em>knowledge agents with LLMs</em>, aiming to enable domain-independent
+  approaches for in-depth exploration and synthesis of information from diverse knowledge sources —
+  structured, unstructured, and hybrid. Some of my recent work includes reinforcement learning approaches
+  (<a href="https://arxiv.org/abs/2510.01832" target="_blank" rel="noopener">SCRIBES</a>, ICLR 2026; work done at Meta), agentic frameworks
+  (<a href="https://arxiv.org/abs/2604.06474" target="_blank" rel="noopener">DataSTORM</a>, COLM 2026;
+  <a href="https://arxiv.org/abs/2407.11417" target="_blank" rel="noopener">SPINACH</a>, EMNLP 2024), and programming-language interfaces
+  for LLMs (<a href="https://arxiv.org/pdf/2311.09818.pdf" target="_blank" rel="noopener">SUQL</a>, NAACL 2024) to tackle this problem.</p>
+  <p>Over the summer of 2026, I am spending time at Databricks, bridging a research collaboration with Stanford.
+  Previously, I interned at Meta Reality Labs and Meta FAIR.</p>
+  <p>I am grateful to be supported by the
+  <a href="https://www.research.ibm.com/university/awards/fellowships" target="_blank" rel="noopener">2025–2026 IBM PhD Fellowship Award</a>.</p>
+  <h2 style="margin-top:1.5rem;">Education</h2>
+  <hr class="rule">
+  <ul class="edu">
+    <li>
+      <span class="place">Ph.D. in Computer Science, Stanford University</span><br>
+      <span class="detail">2022 – 2026 (expected)</span>
+    </li>
+    <li>
+      <span class="place">B.S. (with Honors) in Computer Science &amp; in Mathematics, minor in Physics, The University of Chicago</span><br>
+      <span class="detail">2022</span>
+      <ul class="edu-sub">
+        <li>Quarter-long exchange (Autumn 2021), California Institute of Technology</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section id="news">
+  <h2>News</h2>
+  <hr class="rule">
+  <ul class="news">
+    <li><time>Jul 2026</time><span><a href="https://arxiv.org/abs/2604.06474" target="_blank" rel="noopener">DataSTORM</a>, our deep-research system for large-scale databases, is accepted to COLM 2026.</span></li>
+    <li><time>Jun 2026</time><span>Excited to start my summer research internship at Databricks, bridging a research collaboration with Stanford.</span></li>
+    <li><time>Jun 2026</time><span>Thrilled to represent Stanford at Databricks' inaugural Grounded Reasoning Cup — and <a href="https://x.com/ShichengGLiu/status/2067714650008154253?s=20" target="_blank" rel="noopener"><strong>we won 1st place!</strong></a> Thank you to our mentors from Anthropic.</span></li>
+    <li><time>Jan 2026</time><span><a href="https://arxiv.org/abs/2510.01832" target="_blank" rel="noopener">SCRIBES</a> (work done at Meta) is accepted to ICLR 2026.</span></li>
+    <li><time>Jan 2026</time><span>Honored to receive the <a href="https://www.research.ibm.com/university/awards/fellowships" target="_blank" rel="noopener">IBM PhD Fellowship Award</a> (2025–2026).</span></li>
+  </ul>
+</section>
+
+<section id="publications">
+  <h2>Selected Publications</h2>
+  <hr class="rule">
+  <p class="note"><sup>†</sup> denotes joint first authorship. Full list on
+  <a href="https://scholar.google.com/citations?user=Qu38o2EAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
+
+  <p class="year">LLM-based Deep Research Systems for Databases</p>
+  <div class="pub">
+    <div class="title"><a href="https://arxiv.org/abs/2604.06474" target="_blank" rel="noopener">DataSTORM: Deep Research on Large-Scale Databases using Exploratory Data Analysis and Data Storytelling</a></div>
+    <p class="authors"><strong>Shicheng Liu</strong>, Yucheng Jiang, Sajid Farook, Camila Nicollier Sanchez, David Fernando Castro Pena, Monica S. Lam</p>
+    <div class="venue-line"><span class="tag">COLM 2026</span></div>
+  </div>
+
+  <p class="year">LLMs with Structured and Unstructured Data</p>
+  <div class="pub">
+    <div class="title"><a href="https://openreview.net/pdf?id=gQSnEIA3Z3" target="_blank" rel="noopener">SCRIBES: Web-Scale Script-Based Semi-Structured Data Extraction with Reinforcement Learning</a></div>
+    <p class="authors"><strong>Shicheng Liu</strong>, Kai Sun, Lisheng Fu, Xilun Chen, Xinyuan Zhang, Zhaojiang Lin, Rulin Shao, Yue Liu, Anuj Kumar, Wen-tau Yih, Xin Luna Dong</p>
+    <div class="venue-line"><span class="tag">ICLR 2026</span><span>Work done at Meta</span></div>
+  </div>
+  <div class="pub">
+    <div class="title"><a href="https://arxiv.org/abs/2311.09818" target="_blank" rel="noopener">SUQL: Conversational Search over Structured and Unstructured Data with Large Language Models</a></div>
+    <p class="authors"><strong>Shicheng Liu</strong>, Jialiang Xu, Wesley Tjangnaka, Sina J. Semnani, Chen Jie Yu, Monica S. Lam</p>
+    <div class="venue-line"><span class="tag">Findings of NAACL 2024</span><a class="pill-link" href="https://github.com/stanford-oval/suql" title="Code on GitHub" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#icon-github"/></svg>Code</a><a class="pill-link" href="https://pypi.org/project/suql/" title="Package on PyPI" target="_blank" rel="noopener">PyPI</a><a class="pill-link" href="https://drive.google.com/file/d/1apBm1kzgMmijSFqgCBuwpjw23h7VdmQA/view?usp=sharing" title="10-min video presentation" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-play"/></svg>Video</a></div>
+  </div>
+
+  <p class="year">LLMs with Knowledge Bases</p>
+  <div class="pub">
+    <div class="title"><a href="https://arxiv.org/abs/2407.11417" target="_blank" rel="noopener">SPINACH: SPARQL-Based Information Navigation for Challenging Real-World Questions</a></div>
+    <p class="authors"><strong>Shicheng Liu</strong><sup>†</sup>, Sina J. Semnani<sup>†</sup>, Harold Triedman, Jialiang Xu, Isaac Dan Zhao, Monica S. Lam</p>
+    <div class="venue-line"><span class="tag">Findings of EMNLP 2024</span><a class="pill-link" href="https://github.com/stanford-oval/spinach" title="Code on GitHub" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#icon-github"/></svg>Code</a><a class="pill-link" href="https://meta.wikimedia.org/wiki/Research:Newsletter/2024/November" target="_blank" rel="noopener">Wikimedia Research Newsletter</a><a class="pill-link" href="https://drive.google.com/file/d/1cAirGdcAuRSng4G9r-b_72-07yZG44_P/view?usp=drive_link" title="10-min video presentation" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-play"/></svg>Video</a></div>
+  </div>
+  <div class="pub">
+    <div class="title"><a href="https://arxiv.org/abs/2305.14202" target="_blank" rel="noopener">Fine-tuned LLMs Know More, Hallucinate Less with Few-Shot Sequence-to-Sequence Semantic Parsing over Wikidata</a></div>
+    <p class="authors">Silei Xu<sup>†</sup>, <strong>Shicheng Liu</strong><sup>†</sup>, Theo Culhane, Elizaveta Pertseva, Meng-Hsi Wu, Sina Semnani, Monica S. Lam</p>
+    <div class="venue-line"><span class="tag">EMNLP 2023</span><a class="pill-link" href="https://github.com/stanford-oval/wikidata-emnlp23" title="Code on GitHub" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#icon-github"/></svg>Code</a><a class="pill-link" href="https://meta.wikimedia.org/wiki/Research:Newsletter/2023/December" target="_blank" rel="noopener">Wikimedia Research Newsletter</a><a class="pill-link" href="https://drive.google.com/file/d/1QwobWmW9sGAvqi4aWwh5ht3DdDcOLu8Q/view?usp=sharing" title="6-min video presentation" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-play"/></svg>Video</a></div>
+  </div>
+
+  <p class="year">Programmable Task and Knowledge Agents with LLMs</p>
+  <div class="pub">
+    <div class="title"><a href="https://aclanthology.org/2025.acl-long.1323/" target="_blank" rel="noopener">Controllable and Reliable Knowledge-Intensive Task-Oriented Conversational Agents with Declarative Genie Worksheets</a></div>
+    <p class="authors">Harshit Joshi, <strong>Shicheng Liu</strong>, James Chen, Robert Weigle, Monica S. Lam</p>
+    <div class="venue-line"><span class="tag">ACL 2025</span><a class="pill-link" href="https://github.com/stanford-oval/genie-worksheets" title="Code on GitHub" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#icon-github"/></svg>Code</a></div>
+  </div>
+</section>
+
+<section id="awards">
+  <h2>Awards</h2>
+  <hr class="rule">
+  <ul class="awards">
+    <li>IBM PhD Fellowship Recipient <span class="yr">· 2025–2026</span></li>
+    <li>1st Place, Databricks Grounded Reasoning Cup <span class="yr">· 2026</span></li>
+    <li>Brown Institute Magic Grant <span class="yr">· 2024–2025</span></li>
+    <li>Top-5% of Stanford CS Course Assistants (Stanford CS224V) <span class="yr">· 2023</span></li>
+    <li>Graduated Summa Cum Laude, The University of Chicago <span class="yr">· 2022</span></li>
+    <li>Outstanding Undergraduate Researcher Award, Honorable Mention, CRA <span class="yr">· 2022</span></li>
+  </ul>
+</section>
+
+<section id="beyond">
+  <h2>Beyond Research</h2>
+  <hr class="rule">
+  <p>Away from the keyboard, I love playing tennis 🎾, badminton 🏸, bouldering 🧗, and most passionately,
+  snowboarding 🏂. <span class="powder" tabindex="0">If a paper deadline lands on a powder day, my thoughts are with the mountain 🏔️<span class="tip" role="note"><span class="tip-label">❄ Right after deadlines</span>You might see me scrambling for first chairs at Palisades, Heavenly, or sending The Wall off Kirkwood's Chair 10.</span></span>.</p>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2026 Shicheng Liu · <a href="mailto:shicheng@cs.stanford.edu">shicheng@cs.stanford.edu</a></span>
+    <span class="flake-mark">❄ <a href="https://protectourwinters.org" target="_blank" rel="noopener">Protect Our Winters</a></span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var btn = document.querySelector('.theme-toggle');
+  var systemDark = window.matchMedia('(prefers-color-scheme: dark)');
+  function isDark() {
+    var chosen = document.documentElement.getAttribute('data-theme');
+    if (chosen === 'dark' || chosen === 'light') return chosen === 'dark';
+    return systemDark.matches;
+  }
+  function render() {
+    btn.textContent = isDark() ? '☀' : '☾';
+    btn.setAttribute('aria-label', isDark() ? 'Switch to light mode' : 'Switch to dark mode');
+  }
+  btn.addEventListener('click', function () {
+    var next = isDark() ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    render();
+  });
+  systemDark.addEventListener('change', render);
+  render();
+})();
+
+// Occasionally a rider carves down the front slope, on the runs served by the lift.
+(function () {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var hill = document.querySelector('.liftline');
+  if (!hill || !hill.animate) return;
+  // downhill-to-the-left stretches of the back ridge within the lift's span
+  var runs = [
+    { x0: 33.33, y0: 52, x1: 21.67, y1: 72 },
+    { x0: 53.33, y0: 34, x1: 43.33, y1: 58 },
+    { x0: 63.33, y0: 30, x1: 58.33, y1: 40 }
+  ];
+  function ride() {
+    var run = runs[Math.floor(Math.random() * runs.length)];
+    var el = document.createElement('span');
+    el.className = 'skier';
+    hill.appendChild(el);
+    var anim = el.animate([
+      { left: run.x0 + '%', top: (run.y0 - 6) + 'px', opacity: 0 },
+      { opacity: 0.65, offset: 0.12 },
+      { opacity: 0.65, offset: 0.88 },
+      { left: run.x1 + '%', top: (run.y1 - 6) + 'px', opacity: 0 }
+    ], { duration: Math.abs(run.x1 - run.x0) * 420 + Math.random() * 900, easing: 'ease-in' });
+    anim.onfinish = function () {
+      el.remove();
+      schedule();
+    };
+  }
+  function schedule() {
+    setTimeout(ride, 5000 + Math.random() * 5000);
+  }
+  setTimeout(ride, 500);
+})();
+</script>
+
+</body>
+</html>

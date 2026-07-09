@@ -1,2 +1,6 @@
-_site/
-
+.DS_Store
+.vscode/
+Gemfile.lock
+cv_latex/
+texput.log
+talkmap.ipynb
