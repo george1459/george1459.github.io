@@ -458,6 +458,18 @@ h2 {
 @media (prefers-reduced-motion: reduce) {
   .powder .tip { transition: none; }
 }
+@media (max-width: 560px) {
+  .powder .tip {
+    position: fixed;
+    top: auto;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    width: auto;
+    z-index: 20;
+    box-shadow: 0 8px 24px rgba(31, 78, 102, 0.3);
+  }
+}
 
 /* footer */
 footer {
