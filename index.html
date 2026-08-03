@@ -79,8 +79,8 @@ body {
   background: var(--ground);
   color: var(--ink);
   font-family: var(--serif);
-  font-size: 1rem;
-  line-height: 1.55;
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; text-underline-offset: 3px; }
@@ -95,7 +95,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-
 .masthead-inner {
   position: relative;
   z-index: 2;
-  max-width: 46rem;
+  max-width: 52rem;
   margin: 0 auto;
   padding: 2.4rem 1.5rem 0.6rem;
   display: flex;
@@ -106,7 +106,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-
 .masthead h1 {
   font-family: var(--serif);
   font-weight: 600;
-  font-size: clamp(1.8rem, 4.5vw, 2.2rem);
+  font-size: clamp(1.9rem, 4.7vw, 2.3rem);
   letter-spacing: 0.01em;
   margin: 0 0 0.35rem;
   text-wrap: balance;
@@ -114,7 +114,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-
 .role {
   margin: 0 0 0.7rem;
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 0.98rem;
 }
 .role a { color: var(--muted); text-decoration: underline; text-decoration-color: var(--ice); text-underline-offset: 3px; }
 .role a:hover { color: var(--accent); }
@@ -123,7 +123,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-
   flex-wrap: wrap;
   gap: 0.4rem 1.1rem;
   font-family: var(--sans);
-  font-size: 0.82rem;
+  font-size: 0.86rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -262,14 +262,14 @@ nav {
   border-bottom: 1px solid var(--ice);
 }
 nav ul {
-  max-width: 46rem;
+  max-width: 52rem;
   margin: 0 auto;
   padding: 0.65rem 1.5rem;
   list-style: none;
   display: flex;
   gap: 1.4rem;
   font-family: var(--sans);
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   overflow-x: auto;
@@ -296,16 +296,18 @@ nav ul { align-items: center; }
 
 /* ---------- main ---------- */
 main {
-  max-width: 46rem;
+  max-width: 52rem;
   margin: 0 auto;
   padding: 0.4rem 1.5rem 2rem;
 }
 main p { margin: 0.65em 0; }
+/* running prose keeps a comfortable measure even though the column is wider */
+#about > p, #beyond > p, .note { max-width: 44rem; }
 section { padding-top: 1.7rem; }
 h2 {
   font-family: var(--serif);
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1.36rem;
   margin: 0 0 0.35rem;
 }
 .rule {
@@ -316,20 +318,20 @@ h2 {
   background: var(--accent);
   border-radius: 2px;
 }
-.note { color: var(--muted); font-size: 0.92rem; }
+.note { color: var(--muted); font-size: 0.95rem; }
 
 /* about */
 .edu { list-style: none; padding: 0; margin: 0.4rem 0 0; }
 .edu li { padding: 0.4rem 0; border-top: 1px solid var(--ice); }
 .edu li:first-child { border-top: 0; }
 .edu .place { font-weight: 600; }
-.edu .detail { color: var(--muted); font-size: 0.9rem; }
+.edu .detail { color: var(--muted); font-size: 0.94rem; }
 .edu-sub {
   margin: 0.3rem 0 0;
   padding-left: 1.1rem;
   list-style: none;
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 0.94rem;
   border-left: 2px solid var(--ice);
 }
 
@@ -337,7 +339,7 @@ h2 {
 .news { list-style: none; padding: 0; margin: 0; }
 .news li {
   display: grid;
-  grid-template-columns: 6.2rem 1fr;
+  grid-template-columns: 6.6rem 1fr;
   gap: 1rem;
   padding: 0.4rem 0;
   border-top: 1px solid var(--ice);
@@ -346,7 +348,7 @@ h2 {
 .news a { font-weight: 650; }
 .news time {
   font-family: var(--sans);
-  font-size: 0.78rem;
+  font-size: 0.84rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--muted);
@@ -357,7 +359,7 @@ h2 {
 /* publications */
 .year {
   font-family: var(--sans);
-  font-size: 0.78rem;
+  font-size: 0.84rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -369,10 +371,10 @@ h2 {
   padding-top: 1.1rem;
 }
 .pub { padding: 0.45rem 0; }
-.pub .title { font-weight: 600; font-size: 1rem; }
+.pub .title { font-weight: 600; font-size: 1.05rem; }
 .pub .title a { color: var(--ink); }
 .pub .title a:hover { color: var(--accent); }
-.pub .authors { margin: 0.15rem 0 0.25rem; font-size: 0.9rem; }
+.pub .authors { margin: 0.15rem 0 0.25rem; font-size: 0.94rem; }
 .pub .authors strong { font-weight: 650; }
 .pub .venue-line {
   display: flex;
@@ -380,12 +382,12 @@ h2 {
   align-items: center;
   gap: 0.5rem 0.7rem;
   font-family: var(--sans);
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 .tag {
   background: var(--tag-bg);
   color: var(--tag-ink);
-  padding: 0.12rem 0.55rem;
+  padding: 0.14rem 0.6rem;
   border-radius: 99px;
   font-weight: 600;
   letter-spacing: 0.03em;
@@ -397,20 +399,20 @@ h2 {
   gap: 0.3rem;
   border: 1px solid var(--ice);
   border-radius: 99px;
-  padding: 0.1rem 0.55rem;
+  padding: 0.14rem 0.6rem;
   font-weight: 600;
-  font-size: 0.75rem;
+  font-size: 0.82rem;
   letter-spacing: 0.03em;
   color: var(--muted);
 }
 .pill-link:hover { color: var(--accent); border-color: var(--accent); text-decoration: none; }
-.pill-link svg { width: 12px; height: 12px; fill: currentColor; display: block; }
+.pill-link svg { width: 13px; height: 13px; fill: currentColor; display: block; }
 
 /* awards */
 .awards { list-style: none; padding: 0; margin: 0; }
 .awards li { padding: 0.35rem 0; border-top: 1px solid var(--ice); }
 .awards li:first-child { border-top: 0; }
-.awards .yr { color: var(--muted); font-family: var(--sans); font-size: 0.85rem; }
+.awards .yr { color: var(--muted); font-family: var(--sans); font-size: 0.88rem; }
 
 /* powder-day tooltip */
 .powder {
@@ -431,8 +433,8 @@ h2 {
   border-radius: 9px;
   padding: 0.55rem 0.75rem;
   font-family: var(--sans);
-  font-size: 0.8rem;
-  line-height: 1.45;
+  font-size: 0.85rem;
+  line-height: 1.5;
   color: var(--ink);
   box-shadow: 0 5px 16px rgba(31, 78, 102, 0.18);
   opacity: 0;
@@ -444,7 +446,7 @@ h2 {
 .powder .tip-label {
   display: block;
   margin-bottom: 0.2rem;
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -483,11 +485,11 @@ footer {
   margin-top: 2rem;
 }
 .footer-inner {
-  max-width: 46rem;
+  max-width: 52rem;
   margin: 0 auto;
   padding: 1.2rem 1.5rem 1.6rem;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.93rem;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
