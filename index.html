@@ -95,7 +95,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-
 .masthead-inner {
   position: relative;
   z-index: 2;
-  max-width: 52rem;
+  max-width: 58rem;
   margin: 0 auto;
   padding: 2.4rem 1.5rem 0.6rem;
   display: flex;
@@ -262,7 +262,7 @@ nav {
   border-bottom: 1px solid var(--ice);
 }
 nav ul {
-  max-width: 52rem;
+  max-width: 58rem;
   margin: 0 auto;
   padding: 0.65rem 1.5rem;
   list-style: none;
@@ -296,13 +296,11 @@ nav ul { align-items: center; }
 
 /* ---------- main ---------- */
 main {
-  max-width: 52rem;
+  max-width: 58rem;
   margin: 0 auto;
   padding: 0.4rem 1.5rem 2rem;
 }
 main p { margin: 0.65em 0; }
-/* running prose keeps a comfortable measure even though the column is wider */
-#about > p, #beyond > p, .note { max-width: 44rem; }
 section { padding-top: 1.7rem; }
 h2 {
   font-family: var(--serif);
@@ -357,20 +355,11 @@ h2 {
 }
 
 /* publications */
-.year {
-  font-family: var(--sans);
-  font-size: 0.84rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin: 1.2rem 0 0.1rem;
-}
-.pub + .year {
+.pub { padding: 0.55rem 0; }
+.pub + .pub {
   border-top: 1px solid var(--ice);
-  padding-top: 1.1rem;
+  padding-top: 0.8rem;
 }
-.pub { padding: 0.45rem 0; }
 .pub .title { font-weight: 600; font-size: 1.05rem; }
 .pub .title a { color: var(--ink); }
 .pub .title a:hover { color: var(--accent); }
@@ -485,7 +474,7 @@ footer {
   margin-top: 2rem;
 }
 .footer-inner {
-  max-width: 52rem;
+  max-width: 58rem;
   margin: 0 auto;
   padding: 1.2rem 1.5rem 1.6rem;
   color: var(--muted);
@@ -588,9 +577,8 @@ footer {
   (<a href="https://arxiv.org/abs/2510.01832" target="_blank" rel="noopener">SCRIBES</a>, ICLR 2026; work done at Meta), agentic frameworks
   (<a href="https://arxiv.org/abs/2604.06474" target="_blank" rel="noopener">DataSTORM</a>, COLM 2026;
   <a href="https://arxiv.org/abs/2407.11417" target="_blank" rel="noopener">SPINACH</a>, EMNLP 2024), and programming-language interfaces
-  for LLMs (<a href="https://arxiv.org/pdf/2311.09818.pdf" target="_blank" rel="noopener">SUQL</a>, NAACL 2024) to tackle this problem.</p>
-  <p>Over the summer of 2026, I am spending time at Databricks, bridging a research collaboration with Stanford.
-  Previously, I interned at Meta Reality Labs and Meta FAIR.</p>
+  for LLMs (<a href="https://arxiv.org/pdf/2311.09818.pdf" target="_blank" rel="noopener">SUQL</a>, NAACL 2024) to tackle this problem.
+  Previously, I interned at Databricks and Meta.</p>
   <p>I am grateful to be supported by the
   <a href="https://research.ibm.com/labs/yorktown-heights/ibm-academic-awards-program" target="_blank" rel="noopener">2025–2026 IBM PhD Fellowship Award</a>.</p>
   <h2 style="margin-top:1.5rem;">Education</h2>
@@ -615,8 +603,8 @@ footer {
   <hr class="rule">
   <ul class="news">
     <li><time>Sep 2026</time><span>Honored to be named a <a href="https://datascience.uchicago.edu/research/postdoctoral-programs/rising-stars/" target="_blank" rel="noopener">2026 Rising Star in Data Science</a> by the University of Chicago Data Science Institute. Looking forward to presenting at the workshop in November.</span></li>
+    <li><time>Sep 2026</time><span>Wrapped up my summer research internship at Databricks, where I bridged a research collaboration with Stanford. Check out our paper on <a href="https://drive.google.com/file/d/1RXe-z076bd3jKqP0LkzAto8cMvce0soZ/view" target="_blank" rel="noopener">AI-Driven Reproducibility and Analytical Robustness in Scientific Discovery</a>.</span></li>
     <li><time>Jul 2026</time><span><a href="https://arxiv.org/abs/2604.06474" target="_blank" rel="noopener">DataSTORM</a>, our deep-research system for large-scale databases, is accepted to COLM 2026.</span></li>
-    <li><time>Jun 2026</time><span>Excited to start my summer research internship at Databricks, bridging a research collaboration with Stanford.</span></li>
     <li><time>Jun 2026</time><span>Thrilled to represent Stanford at Databricks' inaugural Grounded Reasoning Cup — and <a href="https://x.com/ShichengGLiu/status/2067714650008154253?s=20" target="_blank" rel="noopener"><strong>we won 1st place!</strong></a> Thank you to our mentors from Anthropic. Check out our winning solution in <a href="https://www.databricks.com/blog/evaluating-ai-agents-live-grounded-reasoning-cup" target="_blank" rel="noopener">Databricks' writeup</a>.</span></li>
     <li><time>Jan 2026</time><span><a href="https://arxiv.org/abs/2510.01832" target="_blank" rel="noopener">SCRIBES</a> (work done at Meta) is accepted to ICLR 2026.</span></li>
     <li><time>Jan 2026</time><span>Honored to receive the <a href="https://research.ibm.com/labs/yorktown-heights/ibm-academic-awards-program" target="_blank" rel="noopener">IBM PhD Fellowship Award</a> (2025–2026).</span></li>
@@ -629,42 +617,40 @@ footer {
   <p class="note"><sup>†</sup> denotes joint first authorship. Full list on
   <a href="https://scholar.google.com/citations?user=Qu38o2EAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
 
-  <p class="year">LLM-based Deep Research Systems for Databases</p>
+  <div class="pub">
+    <div class="title"><a href="https://drive.google.com/file/d/1RXe-z076bd3jKqP0LkzAto8cMvce0soZ/view" target="_blank" rel="noopener">AI-Driven Reproducibility and Analytical Robustness in Scientific Discovery</a></div>
+    <p class="authors"><strong>Shicheng Liu</strong>, Krista Opsahl-Ong, Andrew Drozdov, Julian Killingback, Arnav Singhvi, Ronak Pradeep, Michael Bendersky, James C. Dickerson, Monica S. Lam</p>
+    <div class="venue-line"><span class="tag">Preprint</span><span>Work done at Databricks</span></div>
+  </div>
   <div class="pub">
     <div class="title"><a href="https://arxiv.org/abs/2604.06474" target="_blank" rel="noopener">DataSTORM: Deep Research on Large-Scale Databases using Exploratory Data Analysis and Data Storytelling</a></div>
     <p class="authors"><strong>Shicheng Liu</strong>, Yucheng Jiang, Sajid Farook, Camila Nicollier Sanchez, David Fernando Castro Pena, Monica S. Lam</p>
-    <div class="venue-line"><span class="tag">COLM 2026</span></div>
+    <div class="venue-line"><span class="tag">COLM 2026</span><a class="pill-link" href="https://github.com/stanford-oval/DataSTORM" title="Code on GitHub" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#icon-github"/></svg>Code</a></div>
   </div>
-
-  <p class="year">LLMs with Structured and Unstructured Data</p>
   <div class="pub">
-    <div class="title"><a href="https://openreview.net/pdf?id=gQSnEIA3Z3" target="_blank" rel="noopener">SCRIBES: Web-Scale Script-Based Semi-Structured Data Extraction with Reinforcement Learning</a></div>
+    <div class="title"><a href="https://arxiv.org/abs/2510.01832" target="_blank" rel="noopener">SCRIBES: Web-Scale Script-Based Semi-Structured Data Extraction with Reinforcement Learning</a></div>
     <p class="authors"><strong>Shicheng Liu</strong>, Kai Sun, Lisheng Fu, Xilun Chen, Xinyuan Zhang, Zhaojiang Lin, Rulin Shao, Yue Liu, Anuj Kumar, Wen-tau Yih, Xin Luna Dong</p>
-    <div class="venue-line"><span class="tag">ICLR 2026</span><span>Work done at Meta</span></div>
+    <div class="venue-line"><span class="tag">ICLR 2026</span><span>Work done at Meta</span><a class="pill-link" href="https://github.com/facebookresearch/SCRIBES" title="Code on GitHub" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#icon-github"/></svg>Code</a></div>
   </div>
   <div class="pub">
-    <div class="title"><a href="https://arxiv.org/abs/2311.09818" target="_blank" rel="noopener">SUQL: Conversational Search over Structured and Unstructured Data with Large Language Models</a></div>
-    <p class="authors"><strong>Shicheng Liu</strong>, Jialiang Xu, Wesley Tjangnaka, Sina J. Semnani, Chen Jie Yu, Monica S. Lam</p>
-    <div class="venue-line"><span class="tag">Findings of NAACL 2024</span><a class="pill-link" href="https://github.com/stanford-oval/suql" title="Code on GitHub" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#icon-github"/></svg>Code</a><a class="pill-link" href="https://pypi.org/project/suql/" title="Package on PyPI" target="_blank" rel="noopener">PyPI</a><a class="pill-link" href="https://drive.google.com/file/d/1apBm1kzgMmijSFqgCBuwpjw23h7VdmQA/view?usp=sharing" title="10-min video presentation" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-play"/></svg>Video</a></div>
+    <div class="title"><a href="https://aclanthology.org/2025.acl-long.1323/" target="_blank" rel="noopener">Controllable and Reliable Knowledge-Intensive Task-Oriented Conversational Agents with Declarative Genie Worksheets</a></div>
+    <p class="authors">Harshit Joshi, <strong>Shicheng Liu</strong>, James Chen, Robert Weigle, Monica S. Lam</p>
+    <div class="venue-line"><span class="tag">ACL 2025</span><a class="pill-link" href="https://github.com/stanford-oval/genie-worksheets" title="Code on GitHub" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#icon-github"/></svg>Code</a></div>
   </div>
-
-  <p class="year">LLMs with Knowledge Bases</p>
   <div class="pub">
     <div class="title"><a href="https://arxiv.org/abs/2407.11417" target="_blank" rel="noopener">SPINACH: SPARQL-Based Information Navigation for Challenging Real-World Questions</a></div>
     <p class="authors"><strong>Shicheng Liu</strong><sup>†</sup>, Sina J. Semnani<sup>†</sup>, Harold Triedman, Jialiang Xu, Isaac Dan Zhao, Monica S. Lam</p>
     <div class="venue-line"><span class="tag">Findings of EMNLP 2024</span><a class="pill-link" href="https://github.com/stanford-oval/spinach" title="Code on GitHub" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#icon-github"/></svg>Code</a><a class="pill-link" href="https://meta.wikimedia.org/wiki/Research:Newsletter/2024/November" target="_blank" rel="noopener">Wikimedia Research Newsletter</a><a class="pill-link" href="https://drive.google.com/file/d/1cAirGdcAuRSng4G9r-b_72-07yZG44_P/view?usp=drive_link" title="10-min video presentation" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-play"/></svg>Video</a></div>
   </div>
   <div class="pub">
+    <div class="title"><a href="https://arxiv.org/abs/2311.09818" target="_blank" rel="noopener">SUQL: Conversational Search over Structured and Unstructured Data with Large Language Models</a></div>
+    <p class="authors"><strong>Shicheng Liu</strong>, Jialiang Xu, Wesley Tjangnaka, Sina J. Semnani, Chen Jie Yu, Monica S. Lam</p>
+    <div class="venue-line"><span class="tag">Findings of NAACL 2024</span><a class="pill-link" href="https://github.com/stanford-oval/suql" title="Code on GitHub" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#icon-github"/></svg>Code</a><a class="pill-link" href="https://pypi.org/project/suql/" title="Package on PyPI" target="_blank" rel="noopener">PyPI</a><a class="pill-link" href="https://drive.google.com/file/d/1apBm1kzgMmijSFqgCBuwpjw23h7VdmQA/view?usp=sharing" title="10-min video presentation" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-play"/></svg>Video</a></div>
+  </div>
+  <div class="pub">
     <div class="title"><a href="https://arxiv.org/abs/2305.14202" target="_blank" rel="noopener">Fine-tuned LLMs Know More, Hallucinate Less with Few-Shot Sequence-to-Sequence Semantic Parsing over Wikidata</a></div>
     <p class="authors">Silei Xu<sup>†</sup>, <strong>Shicheng Liu</strong><sup>†</sup>, Theo Culhane, Elizaveta Pertseva, Meng-Hsi Wu, Sina Semnani, Monica S. Lam</p>
     <div class="venue-line"><span class="tag">EMNLP 2023</span><a class="pill-link" href="https://github.com/stanford-oval/wikidata-emnlp23" title="Code on GitHub" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#icon-github"/></svg>Code</a><a class="pill-link" href="https://meta.wikimedia.org/wiki/Research:Newsletter/2023/December" target="_blank" rel="noopener">Wikimedia Research Newsletter</a><a class="pill-link" href="https://drive.google.com/file/d/1QwobWmW9sGAvqi4aWwh5ht3DdDcOLu8Q/view?usp=sharing" title="6-min video presentation" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-play"/></svg>Video</a></div>
-  </div>
-
-  <p class="year">Programmable Task and Knowledge Agents with LLMs</p>
-  <div class="pub">
-    <div class="title"><a href="https://aclanthology.org/2025.acl-long.1323/" target="_blank" rel="noopener">Controllable and Reliable Knowledge-Intensive Task-Oriented Conversational Agents with Declarative Genie Worksheets</a></div>
-    <p class="authors">Harshit Joshi, <strong>Shicheng Liu</strong>, James Chen, Robert Weigle, Monica S. Lam</p>
-    <div class="venue-line"><span class="tag">ACL 2025</span><a class="pill-link" href="https://github.com/stanford-oval/genie-worksheets" title="Code on GitHub" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#icon-github"/></svg>Code</a></div>
   </div>
 </section>
 
